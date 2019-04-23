@@ -69,3 +69,13 @@ select distinct (Cliente) from Pedido;
 select sum(Valor) as Soma, Cliente from Pedido group by Cliente;
 
 select * from pedido;
+
+select sum(Valor) as Soma, Cliente from Pedido group by Cliente having sum(Valor) >= 2500;
+
+select Nome, (Salario + 200) as Salario_Atual from Funcionario;
+
+select Nome, (Salario * 1.5) as Salario_Atual from Funcionario;
+
+select Nome, (Salario - 200) as Salario_Atual from Funcionario;
+
+select Nome, (Salario / 2) as Salario_Quinzena from Funcionario;
